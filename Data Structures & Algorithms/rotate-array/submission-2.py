@@ -3,10 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        ## brute force take k elements from end of array and shift elements down 
+        ## kinda made it optimised than brute forccing it 
         if k > 0:
             k = k % len(nums) # if k > len(nums) were technically gonna comebacck to original array 
             
             nums[:] = nums[-k:] + nums[:-k]
-            #TC -> O(n) SCC-> O(1) 
+            #TC -> O(n) SCC-> O(n) (most probably)
  
